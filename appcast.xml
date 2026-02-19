@@ -23,8 +23,8 @@
             <enclosure url="https://github.com/perez987/MP3GainOSX-test/releases/download/3.0.1/MP3Gain.Express.zip"
                        sparkle:version="252"
                        sparkle:shortVersionString="3.0.1"
-                       length="4342010"
-                       sparkle:edSignature="NbZxXMJ02rcv0hr3okO0R6Anuonr1QBZTtsDrPxAxAzQWBLmmY0e6W9ha5sSC3PN8R8HVaHskl811m7bHJbqCw=="
+                       length="4343301"
+                       sparkle:edSignature="0atTQcjjtUaLZbxBRsWfTd2PGw+wY4FOtrV5Epso0sfIU/VqknAZDGG2se81fYRZMhuZ3dCffZylCRaysIezDA=="
                        type="application/octet-stream" />
             <sparkle:minimumSystemVersion>11.5</sparkle:minimumSystemVersion>
         </item>
