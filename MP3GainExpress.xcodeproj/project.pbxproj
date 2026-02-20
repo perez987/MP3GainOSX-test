@@ -46,7 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9E3A2AD513C231B400E49A59 /* MP3Gain Express.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MP3Gain Express.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E3A2AD513C231B400E49A59 /* MP3GainExpress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MP3GainExpress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E3A2AE113C231B400E49A59 /* MP3GainExpress-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MP3GainExpress-Info.plist"; sourceTree = "<group>"; };
 		9E3A2AE513C231B400E49A59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9E3A2AE713C231B400E49A59 /* MP3GainExpress-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MP3GainExpress-Prefix.pch"; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 		9E3A2AD613C231B400E49A59 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9E3A2AD513C231B400E49A59 /* MP3Gain Express.app */,
+				9E3A2AD513C231B400E49A59 /* MP3GainExpress.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,7 +224,7 @@
 			);
 			name = MP3GainExpress;
 			productName = Mp3GainMac;
-			productReference = 9E3A2AD513C231B400E49A59 /* MP3Gain Express.app */;
+			productReference = 9E3A2AD513C231B400E49A59 /* MP3GainExpress.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -445,7 +445,7 @@
 				MARKETING_VERSION = 3.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sappharad.${PRODUCT_NAME:rfc1034identifier}";
 				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "com.sappharad.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "MP3Gain Express";
+				PRODUCT_NAME = MP3GainExpress;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -477,7 +477,7 @@
 				MARKETING_VERSION = 3.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sappharad.${PRODUCT_NAME:rfc1034identifier}";
 				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "com.sappharad.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "MP3Gain Express";
+				PRODUCT_NAME = MP3GainExpress;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = NO;

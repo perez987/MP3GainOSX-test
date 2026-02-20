@@ -1,14 +1,12 @@
 # Sparkle Updates Configuration
 
-This document describes how the Sparkle auto-update system is configured for a GitHub repository containing a Xcode project.
+This document describes how to configure the Sparkle auto-update system in a GitHub repository containing a Xcode project.
 
 ## Overview
 
-The sample repository [MP3Gain Express](https://github.com/perez987/MP3GainOSX-test) uses the Sparkle framework (version 1.24.0) to provide automatic updates. The update feed is defined in the `appcast.xml` file located in the root of the repository.
+There is an example repository reository [MP3GainOSX-text](https://github.com/perez987/MP3GainOSX-test) that uses the Sparkle framework (version 1.24.0) to provide automatic updates, to complement the information in this how-to. The update feed is defined in the `appcast.xml` file located in the root of the repository.
 
-## First steps
-
-### Generate required keys
+## Generate keys
 
 - Get a Sparkle distribution from the [releases](https://github.com/sparkle-project/Sparkle/releases) page
 - Run `./generate_keys` (available in the `bin` folder in the Sparkle distribution root, this needs to be done only once):
@@ -18,9 +16,9 @@ The sample repository [MP3Gain Express](https://github.com/perez987/MP3GainOSX-t
 
 ### Sign the app ZIP file
 
-- Compress as ZIP the Xcode product intended to be uploaded as a release to GitHub (e.g. MP3Gain.Express.zip)
+- Compress as ZIP the Xcode product intended to be uploaded as release to GitHub (e.g. MP3GainExpress.zip)
 - Run `./sign_update MP3GainExpress.zip` (`sign_update` is available in the `bin` folder in the Sparkle distribution root)
-- You get 2 data, write both down for later use:
+- You get 2 data, write down for later use:
 	- sparkle:edSignature -> a base64-encoded string to be added into the appcast.xml file
 	- length -> ZIP file size in bytes.
 
@@ -69,7 +67,7 @@ The `appcast.xml` file follows the Sparkle RSS-based format:
             </ul>
             ]]></description>
             <pubDate>Mon, 17 Feb 2026 19:00:00 +0000</pubDate>
-            <enclosure url="https://github.com/perez987/MP3GainOSX-test/releases/download/3.0.1/MP3Gain.Express.zip"
+            <enclosure url="https://github.com/perez987/MP3GainOSX-test/releases/download/3.0.1/MP3GainExpress.zip"
                        sparkle:version="252"
                        sparkle:shortVersionString="3.0.1"
                        length="4342010"
@@ -119,13 +117,17 @@ When publishing a new release, follow these steps:
 3. **Sign the Update (Required for Security)**
    
    - Sparkle requires EdDSA signatures to verify update authenticity
-   - See above "Sign the app ZIP file".
-  
+   - Compress as ZIP the Xcode product intended to be uploaded as release to GitHub (e.g. MP3GainExpress.zip)
+   - Run `./sign_update MP3GainExpress.zip` (`sign_update` is available in the `bin` folder in the Sparkle distribution root)
+   - You get 2 data, write down for later use:
+      - sparkle:edSignature -> a base64-encoded string to be added into the appcast.xml file
+      - length -> ZIP file size in bytes.  
+
 4. **Create GitHub Release**
    
    - Create a new release on GitHub with the version tag (e.g., `3.0.1`)
-   - Upload the `MP3GainExpress.app.zip` file as a release asset
-   - Add release notes describing the changes.
+   - Upload the `MP3GainExpress.zip` file as a release asset
+   - Add release notes describing the changes In relase page and in appcast.xml).
 
 5. **Update appcast.xml**
    
@@ -164,12 +166,12 @@ To test updates without EdDSA signature verification:
 4. **Test the configuration**:
    
    - Build and run the app in Xcode
-   - Select **MP3Gain Express > Check for Updates...**
+   - Select MP3Gain Express > Check for Updates...
    - The app should fetch and parse the feed successfully (though it may not show an update if versions match).
 
 **Important**: Remember to re-enable signature verification before releasing to production by adding back the `SUPublicEDKey` key and including EdDSA signatures in the appcast.
 
-### Testing configuration with local file (for development)
+### Testing with local file (for development)
 
 1. **Get the full path to your appcast.xml:**
    
@@ -191,7 +193,7 @@ To test updates without EdDSA signature verification:
    - Open MP3GainExpress.xcodeproj in Xcode
    - Build (⌘B)
    - Run (⌘R)
-   - Select **MP3Gain Express > Check for Updates...**.
+   - Select MP3Gain Express > Check for Updates....
 
 4. **Expected result:**
    
