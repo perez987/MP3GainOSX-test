@@ -10,7 +10,6 @@
                     <li>Test Sparkle updater with Appcast.xml and SUPublicEDKey to get updates notifications</li>
                     <li>Fix Sparkle updater version comparison: use build number in sparkle:version</li>
                     <li>Add language support with macOS language automatic detection</li>
-                    <li>Spanish and English, fallback to English</li>
                     <li>Warning window follows macOS theme (dark / light)</li>
                     <li>Fix table cell text alignment by setting NSTextField alignment property</li>
                     <ul>
