@@ -24,7 +24,6 @@
 		9EA9F17713C278550036B145 /* m3gInputItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9F17613C278550036B145 /* m3gInputItem.m */; };
 		9EB6852C1EB839E7003DD377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6852B1EB839E7003DD377 /* Assets.xcassets */; };
 		9EBDFE2E1EB53E4300C0F9F4 /* M3GWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBDFE2D1EB53E4300C0F9F4 /* M3GWindow.m */; };
-		D9F96FB32F44E64D00CA6066 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = D9F96FB22F44E64D00CA6066 /* dsa_pub.pem */; };
 		D9F96FB52F44E6EF00CA6066 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9F96FB42F44E6EF00CA6066 /* Localizable.strings */; };
 		D9F96FB72F44E5F700CA6066 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F96FB62F44E5F700CA6066 /* Sparkle.framework */; };
 		D9F96FB82F44E70900CA6066 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9F96FB62F44E5F700CA6066 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -75,7 +74,6 @@
 		D94C907D2F437916002C5ED4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D94C907DEN /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		D94C907DES /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		D9F96FB22F44E64D00CA6066 /* dsa_pub.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		D9F96FB4EN /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D9F96FB4ES /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D9F96FB62F44E5F700CA6066 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 				D92A70FC2F42415600A5866C /* aacgain-exe */,
 				9EB6852B1EB839E7003DD377 /* Assets.xcassets */,
 				D9F96FBB2F44E8AA00CA6066 /* Credits.rtf */,
-				D9F96FB22F44E64D00CA6066 /* dsa_pub.pem */,
 				D9F96FB42F44E6EF00CA6066 /* Localizable.strings */,
 				9E3A2AE513C231B400E49A59 /* main.m */,
 				9E3A2AEE13C231B400E49A59 /* MainMenu.xib */,
@@ -271,7 +268,6 @@
 				9E3A2AF713C237A000E49A59 /* AddSong.png in Resources */,
 				D9F96FBA2F44E8AA00CA6066 /* Credits.rtf in Resources */,
 				D9F96FB52F44E6EF00CA6066 /* Localizable.strings in Resources */,
-				D9F96FB32F44E64D00CA6066 /* dsa_pub.pem in Resources */,
 				9E3A2AFB13C23D5200E49A59 /* AddFolder.png in Resources */,
 				9E3A2AFC13C23D5200E49A59 /* ClearAll.png in Resources */,
 				9E3A2AFD13C23D5200E49A59 /* ClearSong.png in Resources */,

@@ -116,18 +116,18 @@
         </menu>
         <window title="MP3Gain Express" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" toolbarStyle="expanded" id="371" userLabel="MainWindow" customClass="M3GWindow">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <rect key="contentRect" x="1218" y="663" width="734" height="400"/>
+            <rect key="contentRect" x="1218" y="663" width="690" height="400"/>
             <rect key="screenRect" x="0.0" y="0.0" width="3008" height="1662"/>
-            <value key="minSize" type="size" width="734" height="400"/>
-            <value key="maxSize" type="size" width="734" height="680"/>
+            <value key="minSize" type="size" width="690" height="400"/>
+            <value key="maxSize" type="size" width="690" height="680"/>
             <view key="contentView" misplaced="YES" id="372">
-                <rect key="frame" x="0.0" y="0.0" width="734" height="400"/>
+                <rect key="frame" x="0.0" y="0.0" width="690" height="400"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <box autoresizesSubviews="NO" borderType="line" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="545">
-                        <rect key="frame" x="20" y="350" width="694" height="33"/>
+                        <rect key="frame" x="20" y="350" width="650" height="33"/>
                         <view key="contentView" id="JAo-9K-Gfq">
-                            <rect key="frame" x="0.0" y="0.0" width="700" height="36"/>
+                            <rect key="frame" x="0.0" y="0.0" width="650" height="33"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="546">
@@ -143,16 +143,16 @@
                                     <constraints>
                                         <constraint firstAttribute="width" constant="50" id="69U-pN-2ZI"/>
                                     </constraints>
-                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="89.0" drawsBackground="YES" id="549">
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="89.0" drawsBackground="YES" id="549">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>
                                 <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="550">
-                                    <rect key="frame" x="234" y="9" width="136" height="16"/>
+                                    <rect key="frame" x="234" y="9" width="111" height="16"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="132" id="xVq-Vt-xhY"/>
+                                        <constraint firstAttribute="width" constant="107" id="xVq-Vt-xhY"/>
                                     </constraints>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="dB (Default 89.0)" id="551">
                                         <font key="font" metaFont="system"/>
@@ -161,7 +161,7 @@
                                     </textFieldCell>
                                 </textField>
                                 <button translatesAutoresizingMaskIntoConstraints="NO" id="622">
-                                    <rect key="frame" x="574" y="10" width="112" height="14"/>
+                                    <rect key="frame" x="530" y="10" width="112" height="14"/>
                                     <buttonCell key="cell" type="check" title="Prevent clipping" bezelStyle="regularSquare" imagePosition="left" controlSize="small" inset="2" id="623">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="message" size="11"/>
@@ -186,19 +186,19 @@
                         </view>
                     </box>
                     <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="552">
-                        <rect key="frame" x="20" y="51" width="694" height="291"/>
+                        <rect key="frame" x="20" y="51" width="650" height="291"/>
                         <clipView key="contentView" id="2Xe-Og-NCU">
-                            <rect key="frame" x="1" y="1" width="692" height="289"/>
+                            <rect key="frame" x="1" y="1" width="648" height="289"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="firstColumnOnly" columnSelection="YES" autosaveColumns="NO" headerView="554" id="556">
-                                    <rect key="frame" x="0.0" y="0.0" width="692" height="266"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="648" height="266"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
-                                        <tableColumn identifier="File" editable="NO" width="354" minWidth="40" maxWidth="1000" id="557">
+                                        <tableColumn identifier="File" editable="NO" width="348" minWidth="40" maxWidth="1000" id="557">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="File">
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
@@ -211,11 +211,11 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                         <tableColumn identifier="Volume" editable="NO" width="100" minWidth="40" maxWidth="1000" id="558">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="right" title="Volume">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Volume">
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
                                             </tableHeaderCell>
-                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="right" title="Text Cell" id="560">
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="560">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -223,23 +223,23 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                         <tableColumn identifier="Clipping" editable="NO" width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="561">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="right" title="Clipping">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Clipping">
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                             </tableHeaderCell>
-                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="right" title="Text Cell" id="562">
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="562">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn identifier="TrackGain" editable="NO" width="114" minWidth="10" maxWidth="3.4028234663852886e+38" id="563">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="right" title="Track Gain">
+                                        <tableColumn identifier="TrackGain" editable="NO" width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="563">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Track Gain">
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                             </tableHeaderCell>
-                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="right" title="Text Cell" id="564">
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="564">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -259,25 +259,25 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <tableHeaderView key="headerView" wantsLayer="YES" id="554">
-                            <rect key="frame" x="0.0" y="0.0" width="692" height="23"/>
+                            <rect key="frame" x="0.0" y="0.0" width="648" height="23"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </tableHeaderView>
                     </scrollView>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="565">
-                        <rect key="frame" x="550" y="16" width="132" height="24"/>
+                        <rect key="frame" x="534" y="16" width="104" height="24"/>
                         <buttonCell key="cell" type="push" title="Apply Gain" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="566">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <constraints>
-                            <constraint firstAttribute="width" constant="132" id="HkF-AH-hLD"/>
+                            <constraint firstAttribute="width" constant="104" id="HkF-AH-hLD"/>
                         </constraints>
                         <connections>
                             <action selector="btnApplyGain:" target="494" id="580"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="569">
-                        <rect key="frame" x="427" y="16" width="111" height="24"/>
+                        <rect key="frame" x="411" y="16" width="111" height="24"/>
                         <buttonCell key="cell" type="push" title="Analyze Only" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="570">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -290,7 +290,7 @@
                         </connections>
                     </button>
                     <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="616">
-                        <rect key="frame" x="690" y="16" width="24" height="24"/>
+                        <rect key="frame" x="646" y="16" width="24" height="24"/>
                         <buttonCell key="cell" type="disclosure" bezelStyle="roundedDisclosure" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="617">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -359,7 +359,7 @@
                     <toolbarItem reference="544"/>
                 </defaultToolbarItems>
             </toolbar>
-            <point key="canvasLocation" x="-353" y="31"/>
+            <point key="canvasLocation" x="-375" y="31"/>
         </window>
         <customObject id="494" customClass="Mp3GainMacAppDelegate">
             <connections>
@@ -439,11 +439,11 @@ Gw
         </window>
         <customObject id="Pcg-zA-uve" userLabel="Preferences" customClass="m3gPreferences"/>
         <customView id="605">
-            <rect key="frame" x="0.0" y="0.0" width="391" height="36"/>
+            <rect key="frame" x="0.0" y="0.0" width="356" height="35"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="606">
-                    <rect key="frame" x="154" y="5" width="221" height="26"/>
+                    <rect key="frame" x="154" y="4" width="185" height="26"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <popUpButtonCell key="cell" type="push" title="None" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="609" id="607">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -457,7 +457,7 @@ Gw
                     </popUpButtonCell>
                 </popUpButton>
                 <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="612">
-                    <rect key="frame" x="17" y="11" width="135" height="17"/>
+                    <rect key="frame" x="17" y="10" width="135" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Include subfolders:" id="613">
                         <font key="font" metaFont="system"/>
@@ -466,7 +466,7 @@ Gw
                     </textFieldCell>
                 </textField>
             </subviews>
-            <point key="canvasLocation" x="-67" y="383"/>
+            <point key="canvasLocation" x="139" y="155"/>
         </customView>
         <menu id="618">
             <items>
@@ -493,7 +493,7 @@ Gw
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="2PP-a2-720"/>
                         </constraints>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="2" drawsBackground="YES" id="KYc-Sl-pe2">
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="2" drawsBackground="YES" id="KYc-Sl-pe2">
                             <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="X3B-wG-ydH">
                                 <real key="minimum" value="1"/>
                                 <real key="maximum" value="4"/>
@@ -549,11 +549,11 @@ Gw
                     <constraint firstAttribute="trailing" secondItem="ZDO-RX-a3X" secondAttribute="trailing" constant="18" id="zbl-Bj-yql"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="-579" y="384"/>
+            <point key="canvasLocation" x="245" y="249"/>
         </window>
         <userDefaultsController representsSharedInstance="YES" id="elj-bg-ril"/>
         <window title="Warning" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="G5f-zl-mMe" userLabel="Warning" customClass="NSPanel">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
             <rect key="contentRect" x="136" y="163" width="392" height="135"/>
             <rect key="screenRect" x="0.0" y="0.0" width="3008" height="1662"/>
             <view key="contentView" wantsLayer="YES" id="c5w-SR-UOa">
@@ -577,8 +577,8 @@ Gw
                         <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" alignment="justified" id="HI7-yn-PLY">
                             <font key="font" metaFont="system"/>
                             <string key="title">In some situations the modifications made by MP3Gain could damage your files. If you have never used this application before or are concerned about the results, please backup your original files before making changes to them.</string>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="selectedMenuItemTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="selectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                 </subviews>

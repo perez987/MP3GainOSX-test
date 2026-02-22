@@ -33,7 +33,9 @@
         [chkAvoidClipping setState:prefs.NoClipping?NSControlStateValueOn:NSControlStateValueOff];
     }
     if(!prefs.HideWarning){
-        [chkDoNotWarnAgain setTitle:NSLocalizedString(@"DontWarnAgain", @"Do not show this warning again")];
+        NSMutableAttributedString *attrTitle = [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"DontWarnAgain", @"Do not show this warning again")];
+        [attrTitle addAttribute:NSForegroundColorAttributeName value:[NSColor whiteColor] range:NSMakeRange(0, attrTitle.length)];
+        [chkDoNotWarnAgain setAttributedTitle:attrTitle];
         [pnlWarning setIsVisible:YES];
     }
     //Set toolbar images at template, so when we're in dark mode they get inverted automatically:
@@ -50,8 +52,8 @@
     [clearAll setTemplate:YES];
     [tbiClearAll setImage:clearAll];
     if (@available(macOS 11.0, *)) {
-        [mnuCheckForUpdates setImage:[NSImage imageWithSystemSymbolName:@"arrow.triangle.2.circlepath" accessibilityDescription:@"Check for updates"]];
-    }
+         [mnuCheckForUpdates setImage:[NSImage imageWithSystemSymbolName:@"arrow.triangle.2.circlepath" accessibilityDescription:@"Check for updates"]];
+     }
 }
 
 -(void)applicationWillTerminate:(NSNotification *)notification{
