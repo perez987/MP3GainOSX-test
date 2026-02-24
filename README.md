@@ -12,6 +12,6 @@ Based on:
 
 ## Test repository
 
-This is a repository for testing the Sparkle updater. Instructions to configure Sparkle in a Xcode project of  GitHub are available in this repository:
+This is a repository for testing the Sparkle updater. Instructions for setting up Sparkle in an Xcode project of GitHub are available in this repository:
 
 [How to Sparkle in Xcode project](Documentation/Howto-Sparkle.md)
