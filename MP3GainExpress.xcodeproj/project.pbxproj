@@ -27,7 +27,6 @@
 		D9F96FB52F44E6EF00CA6066 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9F96FB42F44E6EF00CA6066 /* Localizable.strings */; };
 		D9F96FBA2F44E8AA00CA6066 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D9F96FBB2F44E8AA00CA6066 /* Credits.rtf */; };
 		D9F96FBE2F44E5F700CA6067 /* GitHubUpdateChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F96FBD2F44E5F700CA6067 /* GitHubUpdateChecker.m */; };
-
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
