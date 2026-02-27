@@ -348,6 +348,10 @@
     return TRUE;
 }
 
+- (BOOL)applicationSupportsSecureRestorableState:(NSApplication *)app API_AVAILABLE(macos(12.0)) {
+    return YES;
+}
+
 - (IBAction)checkForUpdates:(id)sender {
     [[GitHubUpdateChecker sharedChecker] checkForUpdatesWithUserInitiated:YES];
 }
