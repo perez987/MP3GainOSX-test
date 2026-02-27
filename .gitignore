@@ -19,3 +19,4 @@ xcuserdata
 Releases/*
 profile
 *.moved-aside
+_codeql_detected_source_root

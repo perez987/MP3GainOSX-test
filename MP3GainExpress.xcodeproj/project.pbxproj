@@ -25,9 +25,8 @@
 		9EB6852C1EB839E7003DD377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6852B1EB839E7003DD377 /* Assets.xcassets */; };
 		9EBDFE2E1EB53E4300C0F9F4 /* M3GWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBDFE2D1EB53E4300C0F9F4 /* M3GWindow.m */; };
 		D9F96FB52F44E6EF00CA6066 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9F96FB42F44E6EF00CA6066 /* Localizable.strings */; };
-		D9F96FB72F44E5F700CA6066 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F96FB62F44E5F700CA6066 /* Sparkle.framework */; };
-		D9F96FB82F44E70900CA6066 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9F96FB62F44E5F700CA6066 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D9F96FBA2F44E8AA00CA6066 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D9F96FBB2F44E8AA00CA6066 /* Credits.rtf */; };
+		D9F96FBC2F44E5F700CA6067 /* GitHubUpdateChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F96FBD2F44E5F700CA6067 /* GitHubUpdateChecker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,7 +36,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D9F96FB82F44E70900CA6066 /* Sparkle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,9 +74,9 @@
 		D94C907DES /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		D9F96FB4EN /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D9F96FB4ES /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		D9F96FB62F44E5F700CA6066 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		D9F96FBB2F44E8AA00CA6066 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-/* End PBXFileReference section */
+		D9F96FBC2F44E5F700CA6067 /* GitHubUpdateChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitHubUpdateChecker.h; sourceTree = "<group>"; };
+		D9F96FBD2F44E5F700CA6067 /* GitHubUpdateChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitHubUpdateChecker.m; sourceTree = "<group>"; };/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9E3A2AD213C231B400E49A59 /* Frameworks */ = {
@@ -88,7 +86,6 @@
 				9E431AF61D4AFC3700A69E9D /* AppKit.framework in Frameworks */,
 				9E431AF41D4AFC2800A69E9D /* CoreFoundation.framework in Frameworks */,
 				9E431AF71D4AFC4800A69E9D /* UniformTypeIdentifiers.framework in Frameworks */,
-				D9F96FB72F44E5F700CA6066 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +115,6 @@
 				9E431AF51D4AFC3700A69E9D /* AppKit.framework */,
 				9E431AF31D4AFC2800A69E9D /* CoreFoundation.framework */,
 				9E431AF81D4AFC4800A69E9D /* UniformTypeIdentifiers.framework */,
-				D9F96FB62F44E5F700CA6066 /* Sparkle.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,6 +133,8 @@
 				9E3A2AE713C231B400E49A59 /* MP3GainExpress-Prefix.pch */,
 				9E3A2AEB13C231B400E49A59 /* Mp3GainMacAppDelegate.h */,
 				9E3A2AEC13C231B400E49A59 /* Mp3GainMacAppDelegate.m */,
+				D9F96FBC2F44E5F700CA6067 /* GitHubUpdateChecker.h */,
+				D9F96FBD2F44E5F700CA6067 /* GitHubUpdateChecker.m */,
 				D92A70F92F4240D500A5866C /* Preferences */,
 				D92A70FB2F42410100A5866C /* Process */,
 				9E3A2AE013C231B400E49A59 /* Supporting Files */,
@@ -288,6 +286,7 @@
 				9E5E0AC11ED8D0E500B2D422 /* m3gPreferences.m in Sources */,
 				9EA9F17713C278550036B145 /* m3gInputItem.m in Sources */,
 				9E48BC2A13C3F34A003BDC4F /* m3gInputList.m in Sources */,
+				D9F96FBC2F44E5F700CA6067 /* GitHubUpdateChecker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +424,6 @@
 				CURRENT_PROJECT_VERSION = 252;
 				DEVELOPMENT_TEAM = ER43ZD2S4U;
 				ENABLE_HARDENED_RUNTIME = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)",
-					"$(PROJECT_DIR)",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MP3GainExpress/MP3GainExpress-Prefix.pch";
 				INFOPLIST_FILE = "MP3GainExpress/MP3GainExpress-Info.plist";
@@ -455,11 +449,6 @@
 				CURRENT_PROJECT_VERSION = 252;
 				DEVELOPMENT_TEAM = ER43ZD2S4U;
 				ENABLE_HARDENED_RUNTIME = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)",
-					"$(PROJECT_DIR)",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MP3GainExpress/MP3GainExpress-Prefix.pch";
 				INFOPLIST_FILE = "MP3GainExpress/MP3GainExpress-Info.plist";
