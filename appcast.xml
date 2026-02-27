@@ -5,19 +5,7 @@
         <language>en</language>
         <item>
             <title>Version 3.0.1</title>
-            <description><![CDATA[
-                <ul>
-                    <li>Test Sparkle updater with Appcast.xml and SUPublicEDKey to get updates notifications</li>
-                    <li>Fix Sparkle updater version comparison: use build number in sparkle:version</li>
-                    <li>Add language support with macOS language automatic detection</li>
-                    <li>Warning window follows macOS theme (dark / light)</li>
-                    <li>Fix table cell text alignment by setting NSTextField alignment property</li>
-                    <ul>
-                        <li>Set File column cells to left-aligned and Volume, Clipping, and TrackGain column cells to right-aligned</li>
-                        <li>Alignment is now applied when creating text fields in viewForTableColumn method</li>
-                    </ul>
-            </ul>
-            ]]></description>
+            <description></description>
             <pubDate>Mon, 17 Feb 2026 19:00:00 +0000</pubDate>
             <enclosure url="https://github.com/perez987/MP3GainOSX-test/releases/download/3.0.1/MP3GainExpress.zip"
                        sparkle:version="252"
