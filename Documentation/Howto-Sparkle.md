@@ -227,6 +227,16 @@ If signature verification fails:
 4. Make sure the signature was generated with the matching private key
 5. Consider disabling signature verification during testing (not recommended for production).
 
+### "An error occurred while extracting the archive" Dialog
+
+If users see this error after clicking "Install and Relaunch", the most common cause is **ad-hoc code signing** (`CODE_SIGN_IDENTITY = "-"` in Xcode build settings). Sparkle 1.x verifies that the update bundle is signed with Apple Code Signing (a real developer certificate). With ad-hoc signing every build has a unique cdhash-based requirement, so the code-signing check always fails between versions.
+
+**Fix:**
+
+1. In Xcode build settings for the Release configuration, do **not** override `CODE_SIGN_IDENTITY` with `"-"`. Leave it unset so that `CODE_SIGN_STYLE = Automatic` can select your Apple Developer certificate.
+2. Set `OTHER_CODE_SIGN_FLAGS = "--deep"` in the Release configuration. This ensures all nested executables inside `Sparkle.framework` (particularly `Autoupdate.app` and `fileop`) are re-signed with the same developer certificate, making the code-signing identity consistent throughout the app bundle.
+3. Rebuild the Release app, re-create the ZIP, re-sign it with `sign_update`, and update the appcast.
+
 ## References
 
 - [Sparkle Project](https://sparkle-project.org/)
