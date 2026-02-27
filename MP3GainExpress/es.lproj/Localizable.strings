@@ -80,3 +80,14 @@
 "InvalidVolume" = "¡Volumen objetivo no válido!";
 "VolumeInfo" = "El volumen debe ser un número entre 50 y 100 dB.";
 "reprocessAlbum" = "Procesar como álbum...";
+
+/* Update Check */
+"UpdateAvailable" = "Actualización disponible";
+"UpdateAvailableInfo" = "MP3Gain Express %@ ya está disponible. ¿Desea descargarlo?";
+"DownloadUpdate" = "Descargar actualización";
+"UpdateLater" = "Más tarde";
+"UpToDate" = "¡Estás al día!";
+"UpToDateInfo" = "MP3Gain Express %@ es actualmente la versión más reciente.";
+"UpdateCheckError" = "Error al comprobar actualizaciones";
+"UpdateCheckFailed" = "No se pudo analizar la información de actualización.";
+"UpdateCheckNetworkError" = "No se puede conectar al servidor de actualizaciones. Por favor, comprueba tu conexión a internet.";
